@@ -1,0 +1,22 @@
+---
+layout: "base.njk"
+birds: rick
+permalink: 
+    rick: "/rick/"
+---
+
+
+<a href="/">&laquo; Head on home</a>
+
+
+<h2>Names</h2>
+
+{% assign name = "rick" %}
+{% assign results = name | rickList %}
+
+<div class="card-grid">
+  {% for result in results %}
+    <h1>{{ result.name }}</h1>
+  {% endfor %}
+</div>
+

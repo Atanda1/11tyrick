@@ -1,0 +1,4 @@
+netlify/functions/rick/*
+netlify/functions/rick/**/*
+!netlify/functions/rick/index.js
+/node_modules

@@ -1,0 +1,25 @@
+---
+title: "Rick Finder"
+layout: "base.njk"
+permalink: 
+    build: "/"       
+---
+{% set pageTitle %}
+    {% if eleventy.serverless.path.title %}
+        {{ eleventy.serverless.query.query | safe }}
+    {% else %}
+        {{ title }}
+    {% endif %}
+{% endset %}
+<h1>{{ pageTitle }}</h1>
+
+<button id="rickForm"> Follow this button to see rick</button>
+
+
+<script>
+document.getElementById('rickForm').addEventListener('click', function(event) {
+    event.preventDefault()
+    window.location.href =`/rick/` 
+})
+
+</script>

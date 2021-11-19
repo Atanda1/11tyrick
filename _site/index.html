@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/some-nice-basic-css/global.css" />
+    <style>.container{max-width: 80ch;margin: auto;</style>
+    <title>Rick Finder</title>
+</head>
+<body>
+    <main class="container">
+        
+<h1>
+    
+        Rick Finder
+    
+</h1>
+
+<button id="rickForm"> Follow this button to see rick</button>
+
+
+<script>
+document.getElementById('rickForm').addEventListener('click', function(event) {
+    event.preventDefault()
+    window.location.href =`/rick/` 
+})
+
+</script>
+    </main>
+</body>
+</html>

@@ -1,0 +1,6 @@
+[[redirects]]
+from = "/rick/"
+to = "/.netlify/functions/rick"
+status = 200
+force = true
+_generated_by_eleventy_serverless = "rick"
