@@ -21,6 +21,4 @@ module.exports = function (eleventyConfig) {
 
       return list 
   });
-
- 
 };

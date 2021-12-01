@@ -13,13 +13,4 @@ permalink:
 {% endset %}
 <h1>{{ pageTitle }}</h1>
 
-<button id="rickForm"> Follow this button to see rick</button>
-
-
-<script>
-document.getElementById('rickForm').addEventListener('click', function(event) {
-    event.preventDefault()
-    window.location.href =`/rick/` 
-})
-
-</script>
+<button onclick="window.location.href = '/rick/'" id="rickForm"> Follow this button to see rick</button>
